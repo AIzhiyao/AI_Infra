@@ -1,0 +1,191 @@
+# ================================
+# 第一部分：操作系统（必加）
+# ================================
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ================================
+# 第二部分：IDE 和编辑器（必加）
+# ================================
+
+# IntelliJ IDEA / WebStorm / PyCharm 等
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+.sublime/
+
+# Vim / Neovim
+*.swp
+*.swo
+*.un~
+Session.vim
+
+# Eclipse / STS
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+tmp/
+
+# ================================
+# 第三部分：构建产物和依赖（按需取消注释）
+# ================================
+
+# ----- Node.js / 前端 -----
+# node_modules/
+# dist/
+# build/
+# .next/
+# .nuxt/
+# .output/
+# package-lock.json  （如果使用 npm ci，建议保留；若协作冲突可忽略）
+# yarn.lock           （同上）
+# pnpm-lock.yaml      （同上）
+
+# ----- Python -----
+# __pycache__/
+# *.py[cod]
+# *.so
+# .Python
+# venv/
+# env/
+# .venv
+# *.db
+# *.sqlite3
+
+# ----- Java / Kotlin / Scala -----
+# target/
+# *.class
+# *.jar
+# *.war
+# *.ear
+# .gradle/
+# build/
+# gradle-app.setting
+
+# ----- Go -----
+# *.exe
+# *.exe~
+# *.dll
+# *.so
+# *.dylib
+# *.test
+# *.out
+
+# ----- PHP -----
+# /vendor/
+# composer.lock       （团队协作建议保留，除非冲突频繁）
+
+# ----- C/C++ -----
+# *.o
+# *.obj
+# *.exe
+# *.dll
+# *.so
+# *.dylib
+# a.out
+
+# ================================
+# 第四部分：日志、缓存和临时文件
+# ================================
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 缓存目录
+.cache/
+.parcel-cache/
+.pnpm-store/
+.eslintcache
+.stylelintcache
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ================================
+# 第五部分：环境变量和敏感信息（必须加！！！）
+# ================================
+
+# 环境变量文件（包含密钥、数据库密码等）
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+application-local.yml
+application-dev.yml  # 如果 dev 配置含敏感信息则忽略，否则保留
+
+# 密钥证书
+*.pem
+*.key
+*.crt
+*.p12
+.secrets
+
+# ================================
+# 第六部分：容器和编排（可选）
+# ================================
+
+# Docker
+*.pid
+*.pid.lock
+
+# Kubernetes 本地配置（通常包含上下文信息）
+kubeconfig*
+!kubeconfig.example
+
+# ================================
+# 第七部分：测试覆盖率
+# ================================
+
+coverage/
+.nyc_output/
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+jest-coverage/
+vitest-coverage/
+
+# ================================
+# 第八部分：特殊
+# ================================
+*.txt
+*.pptx
+# logs/*
+# !logs/.gitkeep
